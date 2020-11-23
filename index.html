@@ -73,6 +73,7 @@
     
     <div class="container-fluid">
       <div class="row">
+        <!-- left banner -->
         <div class="col-4 d-flex">
           <div class="card" id="leftBanner" style="width: 20rem;">
             <img class="card-img-top" src="images/joebidenadoptionpicture.png" alt="Card image cap">
@@ -82,17 +83,22 @@
           </div>
         </div>
 
+        <!-- searchbox -->
         <div class="col-4">
           <form>
             <div class="container text-center">
               <label>Describe you pet's symptoms</label>
-              <input type="text" class="form-control" id="symptomChecker_txt" placeholder="Enter Symptoms">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your data with anyone else.</small>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <input type="text" class="form-control" id="symptomTextbox" placeholder="Enter Symptoms">
+              <small class="form-text text-muted">We'll never share your data with anyone else.</small>
+              <input id="submitSymptomsButton" type="button" class="btn btn-primary" value="Submit">
+            </div>
+            <div class="container text-center mt-4">
+              <h3 id="displayDiagnoses"class=""></h3>
             </div>
           </form>
         </div>
 
+        <!-- right banner -->
         <div class="col-4 d-flex flex-row-reverse">
           <div class="card" id="rightBanner" style="width: 20rem;">
             <img class="card-img-top" src="images/joebidenadoptionpicture.png" alt="Card image cap">
@@ -105,7 +111,7 @@
     </div>
 
     <div class="container text-center">
-      <h3>Tips for your pet</h3>
+      <h3 id="petTips">Tips for your pet</h3>
     </div>
     
 
